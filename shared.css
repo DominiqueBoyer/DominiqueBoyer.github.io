@@ -79,13 +79,16 @@
         height: 300px;
         padding 40px;
         margin 30px;
+        display: inline-block;
     }
     
-    .question{
-        width: 60%;
+    div.question{
+        width: 600px;
         height: 300px;
+        font-size: 30px;
         text-align: center;
         font-weight:bold;
+        display:inline-block;
     }
 
     .answers li{
@@ -97,5 +100,12 @@
         font-weight:bold;
     }
 
+    div.standard{
+        margin-top: 100px;
+    }
+    
+    .standard li{
+        display:inline-block;
+    }
 
 
