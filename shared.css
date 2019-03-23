@@ -65,7 +65,6 @@
         display: block;
     }
 
-
     .button01{
         border: 2px;
 
@@ -74,21 +73,13 @@
         /* make button oval */
     }
 
-    .clock{
-        width: 300px;
-        height: 300px;
-        padding 40px;
-        margin 30px;
-        display: inline-block;
-    }
-    
-    div.question{
-        width: 600px;
-        height: 300px;
+
+    #question{
         font-size: 30px;
         text-align: center;
         font-weight:bold;
         display:inline-block;
+        color: white;
     }
 
     .answers li{
@@ -101,29 +92,26 @@
     }
 
     div.standard{
-        margin-top: 100px;
+        margin-top: 10px;
     }
     
     .standard li{
         display:inline-block;
     }
 
-
-
-
     /* css from zz and DB*/
 
     .button01 {
     position: relative;
     background-color:red;
-}
+    }
 
-#clock{
-    font-size: 84px;
-    margin: 0 2.5%;
-    color: white;
-    padding:20px;
-    width: 20%;
-
-}
+    #clock{
+        font-size: 30px;
+        margin: 0 2.5%;
+        color: white;
+        padding:20px;
+        width: 50%;
+        display: inline-block;
+    }
 
