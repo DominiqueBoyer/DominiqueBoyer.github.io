@@ -13,20 +13,22 @@
        margin:auto;
        border:1px solid gray;
        font-size:20px;
-   }
+    }
 
     td{
        border:1px solid gray;
        padding:5px;
-   }
+    }
+
     .time{
         text-align:center;
-   }
+    }
+
     .table-head{
        color:white;
        background-color:seagreen;
        font-weight:bold;
-   }
+    }
 
     .alert{
         background-color:pink;
