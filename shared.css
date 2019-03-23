@@ -65,20 +65,54 @@
         display: block;
     }
 
+    .startButton {
+        border-radius: 4px;
+        background-color: rgb(0, 206, 0);
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 28px;
+        padding: 20px;
+        width: 200px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+      }
+      
+      .challenge {
+        border-radius: 4px;
+        background-color: rgb(27, 91, 230);
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 28px;
+        padding: 20px;
+        width: 200px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+      }
+      
 
-    .button01{
-        border: 2px;
-
-        /* add height and width */
-        margin: 20px;
-        /* make button oval */
-    }
-
+    .button01 {
+        border-radius: 4px;
+        background-color: rgb(0, 206, 0);
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 28px;
+        padding: 20px;
+        width: 200px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+      }
+      
     .clock{
         width: 300px;
         height: 300px;
-        padding 40px;
-        margin 30px;
+        padding: 40px;
+        margin: 30px;
         display: inline-block;
     }
     
@@ -89,15 +123,6 @@
         text-align: center;
         font-weight:bold;
         display:inline-block;
-    }
-
-    .answers li{
-        display: inline-block;
-        border:2px solid rgb(103, 34, 150);
-        margin:2px;
-        padding:1px;
-        text-align:center;
-        font-weight:bold;
     }
 
     div.standard{
