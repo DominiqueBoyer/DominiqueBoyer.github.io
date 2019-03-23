@@ -91,8 +91,8 @@
                 function makeNewPosition() {
 
                     // Get viewport dimensions (remove the dimension of the div)
-                    var h = $(window).height() - 50;
-                    var w = $(window).width() - 50;
+                    var h = $('ul').height() + 200;
+                    var w = $('ul').width() + 200;
 
                     var nh = Math.floor(Math.random() * h);
                     var nw = Math.floor(Math.random() * w);
@@ -103,7 +103,7 @@
 
                 function animateDiv(myclass) {
                     var newq = makeNewPosition();
-                    $(myclass).animate({ top: newq[0], left: newq[1] }, 1000, function () {
+                    $(myclass).animate({ bottom: newq[0], left: newq[1] }, 500, function () {
                         animateDiv(myclass);
                     });
 
