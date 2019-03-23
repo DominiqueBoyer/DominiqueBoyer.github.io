@@ -109,3 +109,21 @@
     }
 
 
+
+
+    /* css from zz and DB*/
+
+    .button01 {
+    position: relative;
+    background-color:red;
+}
+
+#clock{
+    font-size: 84px;
+    margin: 0 2.5%;
+    color: white;
+    padding:20px;
+    width: 20%;
+
+}
+

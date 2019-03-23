@@ -2,6 +2,7 @@
 //possible query format 
 
 
+
 // to get id of element clicked by user
 let submitted_answer;
   //score function
@@ -93,15 +94,71 @@ function submit(){
                   // document.getElementById("result").innerHTML=score_points;
         
                   if (score_points>800){
-                    document.getElementById("result").innerHTML="You are awesome!"
+                    document.getElementById("result").innerHTML="Your Score is "+score_points+" You are awesome!";
                   }else if (score_points<200){
-                    document.getElementById("result").innerHTML="Try one more time!"
+                    document.getElementById("result").innerHTML="Your Score is "+score_points+" Try one more time!"
                   }else{
-                    document.getElementById("result").innerHTML="You are good!"
+                    document.getElementById("result").innerHTML="Your Score is "+score_points+" You are good!"
                   }
                 }
            }
+
+           // add a clock;
+var seconds = 5;
+function makeTimer(){
+    seconds --;
+    document.getElementById("clock").textContent = seconds;
+    if (seconds <= 0){
+        clearInterval(countdown);
+        document.getElementById("clock").textContent = "Sorry. Times Up!";
+        // need to turn page function here to next page 
+        for (let i=0;i<page.length;i++){
+          page[i].style.visibility='hidden';}
+     document.getElementById("question").style.visibility='hidden';
+     document.getElementById("clock").textContent === "Sorry. Times Up!"
+       // document.getElementById("result").innerHTML=score_points;
+
+       if (score_points>800){
+         document.getElementById("result").innerHTML="Your Score is "+score_points+" You are awesome!";
+       }else if (score_points<200){
+         document.getElementById("result").innerHTML="Your Score is "+score_points+" Try one more time!"
+       }else{
+         document.getElementById("result").innerHTML="Your Score is "+score_points+" You are good!"
+       }
+    }
+}
+
+var countdown = setInterval(makeTimer, 1000);
+
+//this will hopefully make it change the color of the timer
+
+let colorChanger = document.getElementById("clock");
+let colors = ["red","orange", "yellow", "green","blue","purple"];
+let counter =0;
+function changeColor (){
+    if(counter >= colors.length){
+        counter =0;
+    }
+    colorChanger.style.background = colors[counter];
+    counter++;
+}
+
+let timeColors = setInterval(changeColor, 500);
+
+           //when times is up
+         
+           
+
+
+
+
+
+
+
           });
 
     }
+
+
+
           
