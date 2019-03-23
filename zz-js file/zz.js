@@ -8,9 +8,12 @@ function submit(){
       .then(function(response) {
         return response.json();
       }).then(function(myJson) {
-           
+           let questions=[];
+           let correct_answers=[];
+           let answers=[];
 
 
 
-      }
+      });
+    }
           
