@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+
+<head>
+    <title> Hack-a-DOM </title>
+    <link rel="stylesheet" href="shared.css" />
+    <script src="zz.js"></script>
+    <script src="jquery-3.3.1.min.js"></script>
+    <!-- <link rel="stylesheet" href="zz.css"> -->
+
+</head>
+
+
+<body>
+
+    <div class="dropdown">
+            <span>Mouse over me</span>
+        <div class="dropdown-content">
+                
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categoriesStandard.html">Standard</a></li>
+                <li><a href="categoriesArcade.html">Arcade</a></li>
+
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="standard">
+            <button id="sumbit"   onclick="submit()">START</button>
+        <ul><li>
+        <p class="question" id="question">here is example</p>
+        </li><li>
+        <div>
+                <span id ="clock"></span>
+        </div>
+        </li>
+
+        <div class="answers" id="answers">
+
+            <ul>
+                <li>
+                    <button class="button01" id="a1" onClick="score(this.id)"></button>
+                </li>
+
+                <li>
+                    <button class="button01" id="a2" onClick="score(this.id)"></button>
+                </li>
+
+                <li>
+                    <button class="button01" id="a3" onClick="score(this.id)"></button>
+                </li>
+                
+                <li>
+                    <button class="button01" id="a4" onClick="score(this.id)"></button>
+                </li>
+            </ul>
+ 
+
+ 
+
+      
+        </div>
+
+    </div>
+    <button id="moving" onclick="moving()">Challenge</button>
+    <p id="result"></p>
+
+
+    <script>
+            // need to set the position of buttons into fixed or relative;
+            function moving(){      
+        animateDiv('#a1');
+        animateDiv('#a2');
+        animateDiv('#a3');
+        animateDiv('#a4');
+    ;
+    
+    function makeNewPosition(){
+        
+        // Get viewport dimensions (remove the dimension of the div)
+        var h = $(window).height() - 50;
+        var w = $(window).width() - 50;
+        
+        var nh = Math.floor(Math.random() * h);
+        var nw = Math.floor(Math.random() * w);
+        
+        return [nh,nw];    
+        
+    }
+    
+    function animateDiv(myclass){
+        var newq = makeNewPosition();
+        $(myclass).animate({ top: newq[0], left: newq[1] }, 1000,   function(){
+          animateDiv(myclass);        
+        });
+        
+    };}</script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

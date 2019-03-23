@@ -1,0 +1,129 @@
+
+
+    header{
+        Width:100%;
+        background-color:purple;
+        font-size:72px;
+        color:white;
+        text-align:center;
+    }
+
+    table{
+       width:30%;
+       margin:auto;
+       border:1px solid gray;
+       font-size:20px;
+    }
+
+    td{
+       border:1px solid gray;
+       padding:5px;
+    }
+
+    li{
+       display: block;
+    }
+
+    li a{ 
+        display:block;
+    }
+
+    .time{
+        text-align:center;
+    }
+    .table-head{
+       color:white;
+       background-color:seagreen;
+       font-weight:bold;
+    }
+
+    .alert{
+        background-color:pink;
+    }
+    
+    .content{
+        margin:40px;
+        font-size:20px;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+      
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+    }
+      
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+
+    .button01{
+        border: 2px;
+
+        /* add height and width */
+        margin: 20px;
+        /* make button oval */
+    }
+
+    .clock{
+        width: 300px;
+        height: 300px;
+        padding 40px;
+        margin 30px;
+        display: inline-block;
+    }
+    
+    div.question{
+        width: 600px;
+        height: 300px;
+        font-size: 30px;
+        text-align: center;
+        font-weight:bold;
+        display:inline-block;
+    }
+
+    .answers li{
+        display: inline-block;
+        border:2px solid rgb(103, 34, 150);
+        margin:2px;
+        padding:1px;
+        text-align:center;
+        font-weight:bold;
+    }
+
+    div.standard{
+        margin-top: 100px;
+    }
+    
+    .standard li{
+        display:inline-block;
+    }
+
+
+
+
+    /* css from zz and DB*/
+
+    .button01 {
+    position: relative;
+    background-color:red;
+}
+
+#clock{
+    font-size: 84px;
+    margin: 0 2.5%;
+    color: white;
+    padding:20px;
+    width: 20%;
+
+}
+
