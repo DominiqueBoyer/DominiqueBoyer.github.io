@@ -104,7 +104,7 @@
 
                 function animateDiv(myclass) {
                     var newq = makeNewPosition();
-                    $(myclass).animate({ top: newq[0], left: newq[1] }, 1000, function () {
+                    $(myclass).animate({ bottom: newq[0], left: newq[1] }, 500, function () {
                         animateDiv(myclass);
                     });
 
