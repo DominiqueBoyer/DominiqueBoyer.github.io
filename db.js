@@ -8,6 +8,7 @@ function makeTimer(){
     if (seconds <= 0){
         clearInterval(countdown);
         document.getElementById("clock").textContent = "Sorry. Times Up!";
+        // need to turn page function here to next page 
     }
 }
 
@@ -26,4 +27,6 @@ function changeColor (){
     counter++;
 }
 
-let timeColors = setInterval(changeColor, 1000);
+let timeColors = setInterval(changeColor, 500);
+
+
