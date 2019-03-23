@@ -1,121 +1,53 @@
-
 <!DOCTYPE html>
 <html>
-<meta charset="UTF-8">
+    <head>
+        <title>Crazy Trivia</title>
+        <script src="zz.js"></script>
+        <script src="jquery-3.3.1.min.js"></script>
+        
+    </head>
+    <body>
+        <div id="page">
+        <p id="question"></p>
+        <button id="sumbit"   onclick="submit()">submit</button>
+       <div class='b'> <button id="answer_1" class="butto" onClick="score(this.id)" ></button></div>
+        <button id="a1" class="button01" onClick="score(this.id)"></button>
+        <button id="a2" class="button01" onClick="score(this.id)"></button>
+        <button id="a3" class="button01" onClick="score(this.id)"></button>
+        <button id="a4" class="button01" onClick="score(this.id)"></button>
+        <div class='a'></div>
+        <p id="result"></p>   
+        <button id="moving" onclick="moving()">Challenge</button>
+        
+      
+    </div>
+    <script>
+        function moving(){      
+    animateDiv('#a1');
+    animateDiv('#a2');
+    animateDiv('#a3');
+    animateDiv('#a4');
+;
 
-<head>
-    <title> </title>
+function makeNewPosition(){
+    
+    // Get viewport dimensions (remove the dimension of the div)
+    var h = $(window).height() - 50;
+    var w = $(window).width() - 50;
+    
+    var nh = Math.floor(Math.random() * h);
+    var nw = Math.floor(Math.random() * w);
+    
+    return [nh,nw];    
+    
+}
 
-    <link rel="stylesheet" href="shared.css" />
-
-</head>
-
-
-<body>
-
-    <div class="dropdown">
-            <span>Mouse over me</span>
-        <div class="dropdown-content">
-
-                
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
-        </div>
-    </div> 
-
-
-    <table id="people">
-        <tr>
-            <th>Name</th>
-            <th>Contact</th>
-            <th>Destination</th>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td> </td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-    </table>
-
-
-
-
-
-    <script> </script>
-</body>
-
+function animateDiv(myclass){
+    var newq = makeNewPosition();
+    $(myclass).animate({ top: newq[0], left: newq[1] }, 1000,   function(){
+      animateDiv(myclass);        
+    });
+    
+};}</script>
+    </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
