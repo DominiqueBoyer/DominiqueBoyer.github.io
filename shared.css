@@ -77,8 +77,8 @@
     .clock{
         width: 300px;
         height: 300px;
-        padding 40px;
-        margin 30px;
+        padding: 40px;
+        margin: 30px;
         display: inline-block;
     }
     
@@ -103,7 +103,7 @@
     div.standard{
         margin-top: 100px;
     }
-    
+
     .standard li{
         display:inline-block;
     }
