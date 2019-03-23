@@ -92,8 +92,8 @@
                 function makeNewPosition() {
 
                     // Get viewport dimensions (remove the dimension of the div)
-                    var h = $(window).height() - 50;
-                    var w = $(window).width() - 50;
+                    var h = $('ul').height() + 200;
+                    var w = $('ul').width() + 200;
 
                     var nh = Math.floor(Math.random() * h);
                     var nw = Math.floor(Math.random() * w);
