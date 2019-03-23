@@ -13,7 +13,7 @@ let submitted_answer;
 
 // fetch info from trivia api
 function submit(){
-    fetch('https://opentdb.com/api.php?amount=10&category=9')
+    fetch('https://opentdb.com/api.php?amount=10&difficulty=easy&type=multiple')
       .then(function(response) {
         return response.json();
       }).then(function(myJson) {
@@ -104,7 +104,7 @@ function submit(){
            }
 
            // add a clock;
-var seconds = 15;
+var seconds = 60;
 function makeTimer(){
     seconds --;
     document.getElementById("clock").textContent = seconds;
