@@ -8,12 +8,10 @@
     <link rel="stylesheet" href="shared.css" />
     <script src="zz.js"></script>
     <script src="jquery-3.3.1.min.js"></script>
-    <!-- <link rel="stylesheet" href="zz.css"> -->
 
 </head>
 
-
-<body>
+<body background="./images/background.jpg">
 
     <div class="dropdown">
             <span>Mouse over me</span>
@@ -30,47 +28,51 @@
     </div>
 
     <div class="standard">
-            <button id="sumbit"   onclick="submit()">START</button>
-        <ul><li>
-        <p class="question" id="question">here is example</p>
-        </li><li>
-        <div>
-                <span id ="clock"></span>
-        </div>
-        </li>
+            <button id="sumbit" onclick="submit()">START</button>
 
-        <div class="answers" id="answers">
+        <ul>
+            <li>
+                <div class="container01"><div id="question">
+                    here is example
+                </div></div>
+            </li>
 
-            <ul>
-                <li>
-                    <button class="button01" id="a1" onClick="score(this.id)"></button>
-                </li>
+            <li>
+                <div class="container02"><div id="clock">
+                    01
+                </div></div>
+            </li>
+        </ul>
 
-                <li>
-                    <button class="button01" id="a2" onClick="score(this.id)"></button>
-                </li>
+    <div class="answers" id="answers">
 
-                <li>
-                    <button class="button01" id="a3" onClick="score(this.id)"></button>
-                </li>
-                
-                <li>
-                    <button class="button01" id="a4" onClick="score(this.id)"></button>
-                </li>
-            </ul>
- 
+        <ul>
+            <li>
+                <button class="button01" id="a1" onClick="score(this.id)"></button>
+            </li>
 
- 
+            <li>
+                <button class="button01" id="a2" onClick="score(this.id)"></button>
+            </li>
 
-      
-        </div>
+            <li>
+                <button class="button01" id="a3" onClick="score(this.id)"></button>
+            </li>
+            
+            <li>
+                <button class="button01" id="a4" onClick="score(this.id)"></button>
+            </li>
+        </ul>
 
     </div>
+
+
     <button id="moving" onclick="moving()">Challenge</button>
     <p id="result"></p>
 
 
     <script>
+
             // need to set the position of buttons into fixed or relative;
             function moving(){      
         animateDiv('#a1');
@@ -98,7 +100,9 @@
           animateDiv(myclass);        
         });
         
-    };}</script>
+    };}
+
+    </script>
 </body>
 
 </html>
