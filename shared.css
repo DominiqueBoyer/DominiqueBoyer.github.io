@@ -68,7 +68,8 @@
 
     .button01{
         border: 2px;
-
+        position: fixed;
+        background-color:red;
         /* add height and width */
         margin: 20px;
         /* make button oval */
