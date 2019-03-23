@@ -10,6 +10,11 @@ let submitted_answer;
     submitted_answer=document.getElementById(clicked_id).innerHTML;
   }
 
+  //reload windows
+  function refresh(){
+    location.reload();
+    submit();
+  }
 
 // fetch info from trivia api
 function submit(){
