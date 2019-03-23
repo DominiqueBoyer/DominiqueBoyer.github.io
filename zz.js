@@ -104,7 +104,7 @@ function submit(){
            }
 
            // add a clock;
-var seconds = 5;
+var seconds = 15;
 function makeTimer(){
     seconds --;
     document.getElementById("clock").textContent = seconds;
